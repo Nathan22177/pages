@@ -1,19 +1,22 @@
-
-
 <html lang="en" class="no-js">
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kokorev CV</title>
     <style>
 
-        *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-        body, html { font-size: 100%; padding: 0; margin: 0;}
+        *, *:after, *:before {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
 
-        /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
-        .clearfix:before, .clearfix:after { content: " "; display: table; }
-        .clearfix:after { clear: both; }
+        body, html {
+            font-size: 100%;
+            padding: 0;
+            margin: 0;
+        }
 
         body {
             font-family: 'Lato', Calibri, Arial, sans-serif;
@@ -58,6 +61,8 @@
             text-transform: uppercase;
             letter-spacing: 0.5em;
             padding: 0 0 0.6em 0.1em;
+            text-align: right;
+
         }
 
         .container > header > span span:after {
@@ -123,46 +128,9 @@
             background: #47a3da;
         }
 
-        .bp-icon:after {
-            font-family: 'bpicons';
-            speak: none;
-            font-style: normal;
-            font-weight: normal;
-            font-variant: normal;
-            text-transform: none;
-            text-align: left;
-            color: #47a3da;
-            -webkit-font-smoothing: antialiased;
-        }
-
-        .container > header nav .bp-icon:after {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            line-height: 2;
-            text-indent: 0;
-        }
 
         .container > header nav a:hover:after {
             color: #fff;
-        }
-
-        .bp-icon-next:after {
-            content: "\e000";
-        }
-        .bp-icon-drop:after {
-            content: "\e001";
-        }
-        .bp-icon-archive:after {
-            content: "\e002";
-        }
-        .bp-icon-about:after {
-            content: "\e003";
-        }
-        .bp-icon-prev:after {
-            content: "\e004";
         }
 
         @media screen and (max-width: 55em) {
@@ -184,16 +152,18 @@
             .container > header > span {
                 text-indent: 30px;
             }
-        }@font-face {
+        }
+
+        @font-face {
             font-family: 'ecoico';
-            src:url('../fonts/timelineicons/ecoico.eot');
-            src:url('../fonts/timelineicons/ecoico.eot?#iefix') format('embedded-opentype'),
+            src: url('../fonts/timelineicons/ecoico.eot');
+            src: url('../fonts/timelineicons/ecoico.eot?#iefix') format('embedded-opentype'),
             url('../fonts/timelineicons/ecoico.woff') format('woff'),
             url('../fonts/timelineicons/ecoico.ttf') format('truetype'),
             url('../fonts/timelineicons/ecoico.svg#ecoico') format('svg');
             font-weight: normal;
             font-style: normal;
-        } /* Made with https://icomoon.io/ */
+        }
 
         .cbp_tmtimeline {
             margin: 30px 0 0 0;
@@ -232,17 +202,18 @@
         }
 
         .cbp_tmtimeline > li .cbp_tmtime span:first-child {
-            font-size: 0.9em;
+            font-size: 1.2em;
             color: #bdd0db;
         }
 
         .cbp_tmtimeline > li .cbp_tmtime span:last-child {
-            font-size: 2.9em;
+            font-size: 1.9em;
             color: #3594cb;
         }
 
         .cbp_tmtimeline > li:nth-child(odd) .cbp_tmtime span:last-child {
             color: #6cbfee;
+
         }
 
         /* Right content */
@@ -256,16 +227,23 @@
             line-height: 1.4;
             position: relative;
             border-radius: 5px;
+            text-align: left;
+
+
         }
 
         .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel {
             background: #6cbfee;
+            text-align: left;
+
         }
 
         .cbp_tmtimeline > li .cbp_tmlabel h2 {
             margin-top: 0px;
             padding: 0 0 10px 0;
-            border-bottom: 1px solid rgba(255,255,255,0.4);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+            text-align: center;
+
         }
 
         /* The triangle */
@@ -280,6 +258,7 @@
             border-right-color: #3594cb;
             border-width: 10px;
             top: 10px;
+
         }
 
         .cbp_tmtimeline > li:nth-child(odd) .cbp_tmlabel:after {
@@ -306,7 +285,7 @@
             }
 
             .cbp_tmtimeline > li .cbp_tmtime span {
-                text-align: left;
+                text-align: right;
             }
 
             .cbp_tmtimeline > li .cbp_tmlabel {
@@ -314,7 +293,7 @@
                 padding: 1em;
                 font-weight: 400;
                 font-size: 95%;
-                text-align: left;
+                text-align: right;
             }
 
             .cbp_tmtimeline > li .cbp_tmlabel:after {
@@ -338,23 +317,25 @@
             }
         }
 
+        .tmtimeline-header {
+            text-indent: 20%;
+        }
+
         .header-img {
             width: 100%;
-            height: 700px;
+            height: 500px;
             background: url('images/photo_2019-06-22_22-47-16.jpg');
             background-attachment: fixed;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-            filter: blur(5px) grayscale(1);
-            -webkit-filter: blur(5px) grayscale(1);
             zoom: 1.2;
             -webkit-transform: scale(1.2);
         }
 
         /* Position text in the middle of the page/image */
         .bg-text {
-            background-color: rgba(108,191,238, 0.4); /* Black w/opacity/see-through */
+            background-color: rgba(108, 191, 238, 0.4); /* Black w/opacity/see-through */
             color: white;
             font-weight: bold;
             border: 3px solid #f1f1f1;
@@ -363,7 +344,7 @@
             left: 50%;
             transform: translate(-50%, -50%);
             z-index: 2;
-            width: 80%;
+            width: 60%;
             padding: 20px;
             text-align: center;
         }
@@ -387,56 +368,104 @@
         <tbody>
         <th colspan="2">
             <ul>
-                <li>Development, support, program implementation of mathematical algorithms of
-                    data from
-                    sensors.
+                <li>Developing processing of large data volumes obtained from telemetry sensors of navigation systems of
+                    guided rockets of the "EARTH-EARTH" class.qweqwwwwwwwqweqeqweqweqweqeqweqw
                 </li>
-                <li>Developed with MATLAB and Implemented into system new, more efficient way of
-                    processing large volumes of telemetry data coming from navigation systems of
-                    guided
-                    rockets of the "EARTH-EARTH" class, obtained from a trial launch
-                </li>
-                <li>Ensured documents were corresponded with the state standards</li>
+                <li>Researching said data</li>
+                <li>Finding and fixing artifacts in navigation system behaviour</li>
             </ul>
         </th>
         <th colspan="5">
             <div class="main">
                 <div class="row">
                     <div class="col-md-8">
+                        <h1 class="tmtimeline-header">My Career So Far</h1>
                         <ul class="cbp_tmtimeline">
                             <li>
-                                <time class="cbp_tmtime"><span>March 2016 - July 2017</span>
-                                    <span>1 year 5 months</span>
+                                <time class="cbp_tmtime"><span>Sep. 2013<br>Jul. 2017</span>
+                                    <span>Bachelor degree</span>
                                 </time>
                                 <div class="cbp_tmlabel">
-                                    <h2>National Research Institute of Instrumentation</h2>
-                                    <h3>Programming engineer</h3>
+                                    <h2>Moscow Aviation Institute <br>(national research university)</h2>
+                                    <h3>Bachelor of Science</h3>
                                     <ul>
-                                        <li>Development, support, program implementation of mathematical algorithms of
-                                            data from
-                                            sensors.
+                                        <li>Technical Systems Control Automation And Artificial Intelligence
                                         </li>
-                                        <li>Developed with MATLAB and Implemented into system new, more efficient way of
-                                            processing large volumes of telemetry data coming from navigation systems of
-                                            guided
-                                            rockets of the "EARTH-EARTH" class, obtained from a trial launch
-                                        </li>
-                                        <li>Ensured documents were corresponded with the state standards</li>
                                     </ul>
                                 </div>
                             </li>
                             <li>
-                                <time class="cbp_tmtime"><span>February 2017 - June 2017</span>
-                                    <span>5 months</span>
+                                <time class="cbp_tmtime"><span>Mar. 2016<br>Jul. 2017</span>
+                                    <span>1 yr. 5 mos.</span>
+                                </time>
+                                <div class="cbp_tmlabel">
+                                    <h2>National Research Institute of Instrumentation
+                                    <br>(research facility)</h2>
+                                    <h3>Programming engineer</h3>
+                                    <ul>
+                                        <li>Developing processing of large data volumes obtained from telemetry sensors of navigation systems of
+                                            guided rockets of the "EARTH-EARTH" class.
+                                        </li>
+                                        <li>Researching said data</li>
+                                        <li>Finding and fixing artifacts in navigation system behaviour</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <time class="cbp_tmtime"><span>Feb. 2017<br>Jun. 2017</span>
+                                    <span>5 mos.</span>
                                 </time>
 
                                 <div class="cbp_tmlabel">
                                     <h2>Moscow Aviation Institute <br>(national research university)</h2>
-                                    <h3>Graduation Design</h3>
-                                    <p>Developed and implemented (MATLAB\Mathcad) a complex of algorithms and software
-                                        for the study of dynamic control systems, which simplified teaching, coursework,
-                                        laboratory work, research and design work in the direction - Automatic Control
-                                        Theory</p>
+                                    <h3>Graduation Work</h3>
+                                    <ul>
+                                        <li>Developed and implemented software
+                                            for a study of a dynamic control systems, purposed to simplify research, laboratory work, teaching,
+                                            and design work in the field of
+                                            Automatic Control Theory (MATLAB\Mathcad)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li>
+                                <time class="cbp_tmtime"><span>Jul. 2017<br>Jul. 2018</span>
+                                    <span>1 year</span>
+                                </time>
+
+                                <div class="cbp_tmlabel">
+                                    <h2>Some company</h2>
+                                    <h3>NDA is to be lifted due 2023</h3>
+                                </div>
+                            </li>
+                            <li>
+                                <time class="cbp_tmtime"><span>Dec. 2018<br>Present</span>
+                                    <span>For a while now</span>
+                                </time>
+
+                                <div class="cbp_tmlabel">
+                                    <h2>SRG Group</h2>
+                                    <h3>Fullstack Developer <br>
+                                        Workspace for real estate appraisers and bank employees<br><br>
+                                        Front-end part:</h3>
+                                    <ul>
+                                        <li>Fields, rules for them and validation of given input</li>
+                                        <li>Focusing very much on minimizing room for mistakes</li>
+                                        <li>Buttons, links, tables and other typical HTML stuff</li>
+                                        <li>Field suggestions, dynamic selects, datepickers</li>
+                                        <li>All sorts of QOL improvements</li>
+                                        <li>UXing when blanks in specification allow me to</li>
+                                    </ul>
+                                    <h3>Back-end part:</h3>
+                                    <ul>
+                                        <li>Registries, making them, optimising fetching and so on</li>
+                                        <li>Working around MVC architecture</li>
+                                        <li>Serializing and deserializing entities with relational, document-oriented and object oriented databases</li>
+                                        <li>Changing the flow to match business logic</li>
+                                        <li>Cost optimizing algorithms</li>
+                                        <li>Refactoring both my and colleague's code, fixing bugs consequentially</li>
+                                        <li>Overseeing and helping juniors, participating in code review and architectural discussions</li>
+                                    </ul>
                                 </div>
                             </li>
                         </ul>
